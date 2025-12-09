@@ -1,0 +1,7 @@
+---
+- name: shutdown all node
+  hosts: all
+  become: true
+  tasks:
+    - name: shutdown
+      command: init 0
